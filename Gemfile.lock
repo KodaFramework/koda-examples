@@ -21,8 +21,6 @@ GEM
     json_pure (1.7.7)
     jwt (0.1.8)
       multi_json (>= 1.5)
-    koda-admin (0.0.1)
-      sinatra
     koda-content (0.0.1)
       bson_ext
       dalli
@@ -40,12 +38,6 @@ GEM
       sinatra
     koda-ui (0.0.1)
       koda-content
-    koda-wms (0.0.1)
-      koda-admin
-      koda-content
-      koda-ui
-      rack-mount
-      sinatra
     mongo (1.8.3)
       bson (~> 1.8.3)
     mongoid (3.1.2)
@@ -75,8 +67,6 @@ GEM
     rack (1.5.2)
     rack-methodoverride-with-params (1.0.0)
       rack (~> 1)
-    rack-mount (0.8.3)
-      rack (>= 1.0.0)
     rack-protection (1.5.0)
       rack
     shared-mime-info (0.1)
@@ -94,9 +84,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  koda-admin
   koda-content
   koda-omniauth
   koda-ui
-  koda-wms
   sinatra
