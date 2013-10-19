@@ -1,4 +1,4 @@
-require 'koda-content'
+require 'koda-api'
 require 'koda-omniauth'
 
 class MyAuthStrategy < Koda::Auth::OmniAuthIntegration

@@ -1,2 +1,2 @@
-require 'koda-content'
+require 'koda-api'
 run Koda::Api

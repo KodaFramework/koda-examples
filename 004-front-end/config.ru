@@ -1,5 +1,5 @@
 require 'sinatra/base'
-require 'koda-content'
+require 'koda-api'
 require 'koda-ui'
 
 class MyApp < Sinatra::Base
@@ -14,8 +14,8 @@ class MyApp < Sinatra::Base
     erb :cars
   end
 
-  get "/cars/:alias/?" do |car_alias|
-    @car = model.cars.single(car_alias)
+  get "/cars/:url_name/?" do |url_name|
+    @car = model.cars.single(url_name)
     erb :car
   end
 end

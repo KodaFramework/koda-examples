@@ -1,5 +1,5 @@
 require 'sinatra/base'
-require 'koda-content'
+require 'koda-api'
 
 class MyApp < Sinatra::Base
   get '/' do

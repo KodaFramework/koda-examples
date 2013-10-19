@@ -24,10 +24,10 @@ class Media < Api
   end
 end
 
-Document.create('/cars/ferrari.json', {founded: 1929, founder: 'Enzo Ferrari', country: 'Italy'})
+Document.create('/cars/ferrari.json', {name: 'Ferrari', alias: 'ferrari', founded: 1929, founder: 'Enzo Ferrari', country: 'Italy'})
 Document.create('/cars/ferrari/f12-berlinetta.json', {engine: 'V12', cc: 6262, hp: 730})
 Media.create('/cars/ferrari/f12-berlinetta.jpeg', 'data/ferrari-berlinetta.jpg')
 
-Document.create('/cars/porsche.json', {founded: 1931, founder: 'Ferdinand Porsche', country: 'Germany'})
+Document.create('/cars/porsche.json', {name: 'Porsche', alias: 'porsche', founded: 1931, founder: 'Ferdinand Porsche', country: 'Germany'})
 Document.create('/cars/porsche/911.json', {engine: 'Flat 6', cc: 3400, hp: 350})
 Media.create('/cars/porsche/911.jpeg', 'data/porsche-911.jpg')
