@@ -1,5 +1,7 @@
 source "https://rubygems.org"
-gem 'koda-content'
+gem 'koda-api'
 gem 'koda-ui'
 gem 'koda-omniauth'
 gem 'sinatra'
+gem 'httmultiparty'
+gem 'json'
