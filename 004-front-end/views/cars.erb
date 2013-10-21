@@ -1,5 +1,5 @@
 <ul>
 <% @cars.each do |car|%>
-    <li><a href="/cars/<%=car['url_name']%>"><%=car['name']%></a></li>
+    <li><a href="/cars/<%=car['_meta.url_name']%>"><%=car['name']%></a></li>
 <% end %>
 </ul>
