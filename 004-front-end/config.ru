@@ -10,19 +10,19 @@ class MyApp < Sinatra::Base
   end
 
   get '/cars/?' do
-    @cars = model.cars.all
+    @cars = koda.query('/cars')
     erb :cars
   end
 
   get "/cars/:url_name/?" do |url_name|
-    @marque = model.cars.single(url_name)
-    @models = model.cars(url_name).all
+    @marque = koda.single("/cars/#{url_name}")
+    @models = koda.query("/cars/#{url_name}")
     erb :marque
   end
 
   get "/cars/:type/:car_model/?" do |type, car_model|
     @base_url = "/cars/#{type}/#{car_model}"
-    @car = model.cars(type).single(car_model)
+    @car = koda.single("/cars/#{type}/#{car_model}")
     erb :car
   end
 end

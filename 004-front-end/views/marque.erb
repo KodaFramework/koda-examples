@@ -2,8 +2,6 @@
 <div>Founded in <%=@marque['founded']%> by <%=@marque['founder']%></div>
 <div>Country: <%=@marque['country']%></div>
 
-
-<%=@models%>
 <ul>
 <%@models.each do |model|%>
 <li><a href="/cars/<%=@marque['_meta.url_name']%>/<%=model['_meta.url_name']%>"><%=model['name']%></a></li>
